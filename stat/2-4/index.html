@@ -33,21 +33,20 @@
 			<section>
 				<h2>統計力学　演習A 問題2-4 答案</h2>
 				<p class="author">藤井淳太朗</p>
-				
-
-<details>
-<summary>info</summary>
-<p class="date"> 発表日: 2021/4/16</p>
-<a href="./report.pdf">pdfバージョン</a><br>
-本presentationのpdfが欲しい場合は<a href="?print-pdf">https://www.juntaro.tk/stat/2-4/index.html?print-pdf</a>にいき、[ctrl+P]で印刷してください。  
-</details>
-		</section>
+				<details>
+					<summary>info</summary>
+					<p class="date"> 発表日: 2021/4/16</p>
+					<a href="./report.pdf">pdfバージョン</a><br>
+					本presentationのpdfが欲しい場合は<a
+						href="?print-pdf">https://www.juntaro.tk/stat/2-4/index.html?print-pdf</a>にいき、[ctrl+P]で印刷してください。
+				</details>
+			</section>
 			<section>
 				<section>
 					<h2>問題A</h2>
 					<p style="text-decoration: underline;">
-					$\hat{x}=\frac{1}{N}\sum_{k=1}^{N}\hat{x}^{(k)}$の期待値と分散を求めよ
-				</p>
+						$\hat{x}=\frac{1}{N}\sum_{k=1}^{N}\hat{x}^{(k)}$の期待値と分散を求めよ
+					</p>
 					<div class="itembox" style="border: solid 3px;padding: 5px; border-radius: 10px;">
 
 						<h3>ガウス分布の性質について</h3>
@@ -105,10 +104,10 @@
 				<section>
 					<h2>問題B</h2>
 					<p style="text-decoration: underline;">
-					$N=2$のとき、$\hat{x}$についての確率分布$\rho_2(x)$を具体的に求めよ
-				</p>
+						$N=2$のとき、$\hat{x}$についての確率分布$\rho_2(x)$を具体的に求めよ
+					</p>
 					<div class="itembox" style="border: solid 3px;padding: 5px; border-radius: 10px;">
-<h3>命題</h3>
+						<h3>命題</h3>
 						分布$p(x,y)$があるとき、$u = x+ y $の分布$\varphi(u)$は
 						$$
 						\varphi(u) = \int_{-\infty}^{\infty} p(u - v, v)dv
@@ -118,7 +117,6 @@
 						\varphi(u ) = (q \ast r)(u) = \int_{-\infty}^{\infty} q(u-v)r(v)dv
 						$$
 						で与えられる。
-
 					</div>
 				</section>
 				<section>
@@ -192,11 +190,11 @@
 						問題C
 					</h2>
 					<p style="text-decoration: underline;">
-					$\hat{x}$の確率密度を
-					$$
-					\rho_N(x) = \int dx^{(1)}\cdots dx^{(N)} f(x,x^{(1), \cdots ,x^{(N)}})
-					$$
-					とかいたとき、関数$f$を求めよ
+						$\hat{x}$の確率密度を
+						$$
+						\rho_N(x) = \int dx^{(1)}\cdots dx^{(N)} f(x,x^{(1), \cdots ,x^{(N)}})
+						$$
+						とかいたとき、関数$f$を求めよ
 					</p>
 					問題 Bにおける命題は$N$変数に拡張することができる。すなわち独立な確率変数の和で構成された確率変数$\hat{y}=\sum_{i=1}^{N}x^{(i)}$の確率密度関数$\rho(y)$は
 					$$
@@ -223,7 +221,7 @@
 					f(x,x^{(1)},x^{(2)}, \cdots ,x^{(N)})
 					&= N\prod_{i=1}^{N}\rho^{(i)}(x^{(i)})\delta(x-\sum_{i=1}^{N}x^{(i)}) \\\\
 					&= \frac{N}{(2\pi \sigma^2)^{\frac{N}{2}}}\exp\left[
-					-\frac{1}{2\sigma^2}\sum_{i=1}^{N}(x^{i}-x_0)^2\right] 
+					-\frac{1}{2\sigma^2}\sum_{i=1}^{N}(x^{i}-x_0)^2\right]
 					\delta(x-\sum_{i=1}^N x^{(i)})
 					\end{align}
 					$$
@@ -234,7 +232,7 @@
 				<section>
 					<h2>問題D</h2>
 					<p style="text-decoration: underline;">
-					確率密度$\rho_N(x)$を計算し、(a)の結果と矛盾がないか調べよ。
+						確率密度$\rho_N(x)$を計算し、(a)の結果と矛盾がないか調べよ。
 					</p>
 					<div class="itembox" style="border: solid 3px;padding: 5px; border-radius: 10px;">
 
@@ -277,14 +275,14 @@
 					$
 					をフーリエ変換すると、各変数の特性関数を$\tilde{\rho}^{(i)}(k^{(i)})$として、
 					$$
-	
+
 					\mathcal{F}[\rho'(y)]
-		= \tilde{\rho}^{(1)}(k^{(1)})\cdots \tilde{\rho}^{(N)}(k^{(N)}) \\\\
+					= \tilde{\rho}^{(1)}(k^{(1)})\cdots \tilde{\rho}^{(N)}(k^{(N)}) \\\\
 
 					$$
 					また$\rho^{(i)}(x^{(i)})$はガウス分布だから、ガウス分布の特性関数を$\tilde{\rho}_G(k)$として、
 					$$
-					\mathcal{F}[\rho'(y)] =  (\tilde{\rho}_G(k))^N
+					\mathcal{F}[\rho'(y)] = (\tilde{\rho}_G(k))^N
 					$$
 					とできる。<br>
 
@@ -334,10 +332,11 @@
 					問題の答えは以下の通りになります。
 					<ul>
 						<li>a: 分散$\frac{\sigma^2}{N}$ 期待値$x_0$となる</li>
-						<li>b: $\rho_2(x) = \frac{1}{\sqrt{\pi \sigma^2}}\exp \left[ -\frac{(x-x_0)^2}{\sigma^2}\right]$</li>
+						<li>b: $\rho_2(x) = \frac{1}{\sqrt{\pi \sigma^2}}\exp \left[ -\frac{(x-x_0)^2}{\sigma^2}\right]$
+						</li>
 						<li>c: $f(x,x^{(1)},x^{(2)}, \cdots ,x^{(N)})
 							= \frac{N}{(2\pi \sigma^2)^{\frac{N}{2}}}\exp\left[
-							-\frac{1}{2\sigma^2}\sum_{i=1}^{N}(x^{i}-x_0)^2\right] 
+							-\frac{1}{2\sigma^2}\sum_{i=1}^{N}(x^{i}-x_0)^2\right]
 							\delta(x-\sum_{i=1}^N x^{(i)})
 							$</li>
 						<li>d: $\rho_N(x) = \frac{1}{\sqrt{2\pi \left(\frac{\sigma^2}{N}\right)}} \exp \left[ -
@@ -350,8 +349,7 @@
 
 	<script src="dist/reveal.js"></script>
 	<script>
-		Reveal.initialize({
-		});
+		Reveal.initialize({});
 	</script>
 </body>
 

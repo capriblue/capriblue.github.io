@@ -33,10 +33,11 @@
 			<section>
 				<h2>統計力学　演習A 問題2-4 答案</h2>
 				<p class="author">藤井淳太朗</p>
-				<p class="date"> 発表日: 2021/4/16</p>
+				
 
 <details>
 <summary>info</summary>
+<p class="date"> 発表日: 2021/4/16</p>
 <a href="./report.pdf">pdfバージョン</a><br>
 本presentationのpdfが欲しい場合は<a href="?print-pdf">https://www.juntaro.tk/stat/2-4/index.html?print-pdf</a>にいき、[ctrl+P]で印刷してください。  
 </details>
@@ -45,7 +46,7 @@
 				<section>
 					<h2>問題A</h2>
 
-					<div class="itembox">
+					<div class="itembox" style="">
 
 						<h3>ガウス分布の性質について</h3>
 
@@ -56,6 +57,7 @@
 						とすると、$\expval{x} = \mu, \expval{x^2} = \mu^2 + \sigma^2$となる。
 
 					</div>
+					<br>
 					期待値は
 					$$
 					\expval{\hat{x}} = \frac{1}{N}\sum_{k=1}^{N} \expval{ \hat{x}^{(k)}} = \frac{1}{N}\sum_{k=1}^{N}x_0
@@ -117,7 +119,7 @@
 					</div>
 				</section>
 				<section>
-					(証明)
+					(証明)<br>
 					$u=x+y,v=y$と$(x,y) \rightarrow (u,v)$の変数変換をすると$\varphi(u)$は$v$の周辺分布になる。
 					$$
 					\varphi(u) = \int_{-\infty}^{\infty} \tilde{p}(u,v)dv
@@ -126,7 +128,7 @@
 					$$
 					\left| \frac{\partial(x,y)}{\partial(u,v)} \right| = 1
 					$$
-					となるから、$\tilde{p}(u,v) = p(x,y) = p(u-v,v)$とでき、
+					となるから、$\tilde{p}(u,v) = p(x,y)|\frac{\partial(x,y)}{\partial(u,v)}| = p(u-v,v)$とでき、
 
 					$$
 					\varphi(u) = \int_{-\infty}^{\infty} p(u-v, v)dv
@@ -257,21 +259,24 @@
 
 				</section>
 				<section>
-					したがって、
-					$$
+					したがって、$y=\sum_{i=1}^{N}$の確率分布の確率密度関数
+					$
 					\rho(y) = (\rho^{(1)} \ast \rho^{(2)} \ast \cdots \rho^{(N)})(y)
+					$
+					をフーリエ変換すると、各変数の特性関数を$\tilde{\rho}^{(i)}(k^{(i)})$として、
 					$$
-					をフーリエ変換すると、ガウス分布の特性関数を$\tilde{\rho}_G(k)$として、
-					$$
-					\begin{align}
+	
 					\mathcal{F}[\rho'(y)]
-					&= \tilde{\rho}^{(1)}(k^{(1)})\cdots \tilde{\rho}^{(N)}(k^{(N)}) \\\\
-					&= (\tilde{\rho}_G(k))^N
-					\end{align}
-					$$
-					とできる。
+		= \tilde{\rho}^{(1)}(k^{(1)})\cdots \tilde{\rho}^{(N)}(k^{(N)}) \\\\
 
-					ガウス分布の特性関数を求めると
+					$$
+					また$\rho^{(i)}(x^{(i)})$はガウス分布だから、ガウス分布の特性関数を$\tilde{\rho}_G(k)$として、
+					$$
+					\mathcal{F}[\rho'(y)] =  (\tilde{\rho}_G(k))^N
+					$$
+					とできる。<br>
+
+					またガウス分布の特性関数を求めると
 					$
 					\tilde{\rho}_{G} (k)=
 					$

@@ -328,6 +328,23 @@
 					となる。これは期待値$x_0$、分散$\dfrac{\sigma^2}{N}$のガウス分布となっている。確かに問題 aの結果と一致している。
 				</section>
 			</section>
+			<section>
+				<section>
+					<h2>まとめ</h2>
+					問題の答えは以下の通りになります。
+					<ul>
+						<li>a: 分散$\frac{\sigma^2}{N}$ 期待値$x_0$となる</li>
+						<li>b: $\rho_2(x) = \frac{1}{\sqrt{\pi \sigma^2}}\exp \left[ -\frac{(x-x_0)^2}{\sigma^2}\right]$</li>
+						<li>c: $f(x,x^{(1)},x^{(2)}, \cdots ,x^{(N)})
+							= \frac{N}{(2\pi \sigma^2)^{\frac{N}{2}}}\exp\left[
+							-\frac{1}{2\sigma^2}\sum_{i=1}^{N}(x^{i}-x_0)^2\right] 
+							\delta(x-\sum_{i=1}^N x^{(i)})
+							$</li>
+						<li>d: $\rho_N(x) = \frac{1}{\sqrt{2\pi \left(\frac{\sigma^2}{N}\right)}} \exp \left[ -
+							\frac{(x-x_0)^2}{2\left(\frac{\sigma^2}{N}\right)}\right]$　これはガウス分布であり、aの答えに一致する。</li>
+					</ul>
+				</section>
+			</section>
 		</div>
 	</div>
 

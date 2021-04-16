@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>統計力学問題発表</title>
+	<title>統計力学問題</title>
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
@@ -45,8 +45,10 @@
 			<section>
 				<section>
 					<h2>問題A</h2>
-
-					<div class="itembox" style="border: solid 3px;padding: 5px;">
+					<p style="text-decoration: underline;">
+					$\hat{x}=\frac{1}{N}\sum_{k=1}^{N}\hat{x}^{(k)}$の期待値と分散を求めよ
+				</p>
+					<div class="itembox" style="border: solid 3px;padding: 5px; border-radius: 10px;">
 
 						<h3>ガウス分布の性質について</h3>
 
@@ -102,8 +104,10 @@
 			<section>
 				<section>
 					<h2>問題B</h2>
-
-					<div class="itembox" style="border: solid 3px;padding: 5px;">
+					<p style="text-decoration: underline;">
+					$N=2$のとき、$\hat{x}$についての確率分布$\rho_2(x)$を具体的に求めよ
+				</p>
+					<div class="itembox" style="border: solid 3px;padding: 5px; border-radius: 10px;">
 <h3>命題</h3>
 						分布$p(x,y)$があるとき、$u = x+ y $の分布$\varphi(u)$は
 						$$
@@ -187,7 +191,13 @@
 					<h2>
 						問題C
 					</h2>
-
+					<p style="text-decoration: underline;">
+					$\hat{x}$の確率密度を
+					$$
+					\rho_N(x) = \int dx^{(1)}\cdots dx^{(N)} f(x,x^{(1), \cdots ,x^{(N)}})
+					$$
+					とかいたとき、関数$f$を求めよ
+					</p>
 					問題 Bにおける命題は$N$変数に拡張することができる。すなわち独立な確率変数の和で構成された確率変数$\hat{y}=\sum_{i=1}^{N}x^{(i)}$の確率密度関数$\rho(y)$は
 					$$
 					\rho(y) = (\rho^{(1)} \ast \rho^{(2)} \ast \cdots \rho^{(N)})(y)
@@ -223,7 +233,10 @@
 			<section>
 				<section>
 					<h2>問題D</h2>
-					<div class="itembox" style="border: solid 3px;padding: 5px;">
+					<p style="text-decoration: underline;">
+					確率密度$\rho_N(x)$を計算し、(a)の結果と矛盾がないか調べよ。
+					</p>
+					<div class="itembox" style="border: solid 3px;padding: 5px; border-radius: 10px;">
 
 						<h3>畳み込みのフーリエ変換</h3>
 
